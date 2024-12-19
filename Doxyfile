@@ -1,0 +1,66 @@
+# Doxygen configuration file for project
+
+# Project-related settings
+PROJECT_NAME           = "LatinSquare Bot Solver"
+PROJECT_BRIEF          = "Implementation of a stack data structure with 2D array manipulation."
+PROJECT_LOGO           = "path_to_logo.png"  # Optional, can be left empty
+OUTPUT_DIRECTORY       = "docs"  # Where the generated documentation will be saved
+CREATE_SUBDIRS         = YES   # Create subdirectories for output
+EXTRACT_ALL            = YES   # Extract all information, even if it's not explicitly documented
+EXTRACT_PRIVATE        = NO    # Don't extract private members
+EXTRACT_STATIC         = YES  # Don't extract static members
+OUTPUT_LANGUAGE        = English  # Language for generated documentation
+FILE_PATTERNS          = *.c *.h *.dox  # Which files to process
+RECURSIVE              = YES   # Whether to search subdirectories for files
+
+
+# HTML related settings
+GENERATE_HTML          = YES   # Generate HTML documentation
+HTML_OUTPUT            = html   # Directory to store HTML output
+HTML_HEADER            = ""    # Path to an HTML header for custom design (optional)
+HTML_FOOTER            = ""    # Path to an HTML footer for custom design (optional)
+HTML_STYLESHEET        = ""    # Path to a custom stylesheet (optional)
+
+# LaTeX related settings
+GENERATE_LATEX         = NO    # Don't generate LaTeX output (set to YES for PDFs)
+
+# Diagrams (Graphviz) settings
+HAVE_DOT               = YES   # Enable Graphviz for generating diagrams
+DOT_GRAPH_MAX_NODES    = 50    # Maximum number of nodes in dependency graphs
+CALL_GRAPH             = YES   # Generate call graphs for functions
+CALLER_GRAPH           = YES   # Generate caller graphs for functions
+DOT_CLEANUP            = YES   # Cleanup temporary DOT files after generating diagrams
+
+# Add specific flags to include extra details
+INLINE_INHERITED_MEMBERS = YES  # Include inherited members inline (in classes)
+INLINE_SIMPLE_STRUCTS   = YES  # Include simple structs inline
+TEMPLATES_EXPANSION     = YES  # Expand template code in the documentation
+
+# Indexing options
+USE_MDFILE_AS_MAINPAGE = README.md  # Optionally specify a main page (e.g., README.md)
+ALPHABETICAL_INDEX      = YES  # Create an alphabetical index of all entities
+
+# Predefined Doxygen tags and extensions
+MACRO_EXPANSION        = YES   # Expand macros
+EXPAND_ONLY_PREDEF     = YES   # Only expand predefined macros
+PREDEFINED             = DOXYGEN_SHOULD_SKIP_THIS  # Allow skipping specific parts of code
+WARNINGS               = YES   # Enable warnings to alert for issues
+QUIET                  = NO    # Disable quiet mode for more verbose output
+WARN_IF_UNDOCUMENTED   = YES   # Warn if there are undocumented functions
+
+# Additional options for handling specific files or functions
+IGNORE_PATTERNS        = ".*"  # Ignore files matching this pattern (optional)
+SORT_MEMBER_DOCS       = YES   # Sort member documentation in classes
+CASE_SENSITIVE        = YES   # Make the documentation case-sensitive
+
+# Additional options for the detailed output
+VERBOSE_OUTPUT         = YES   # Enable verbose output for detailed logs
+
+# Additional configuration for the generated HTML documentation
+GENERATE_TREEVIEW      = YES   # Add a treeview to the HTML output
+
+# Enable Doxygen to generate a dependency graph with Graphviz
+DOT_PATH               = /usr/bin/  # Path to Graphviz if not in system path (optional)
+
+# Additional configurations for the generated reports
+GENERATE_XML           = NO    # Do not generate XML (optional)

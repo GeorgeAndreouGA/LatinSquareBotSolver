@@ -1,0 +1,27 @@
+/**
+
+@mainpage Project3
+
+@author George Andreou and Andreas Dimosthenous
+
+ *
+ * @brief  A C program that solves Latin squares using a backtracking algorithm.
+ *
+ * This program reads an input file containing the size of a Latin square (n) and its initial configuration.
+ * It uses a backtracking algorithm to fill in the square such that each number from 1 to n appears exactly once
+ * in each row and each column. The program performs the following steps:
+ * 1. Reads the input data and stores it in a dynamically allocated 2D array.
+ * 2. Searches for the first empty position and tries to place a valid number from 1 to n in that position, ensuring
+ *    that no row or column has repeated numbers.
+ * 3. If a valid number is found, the current state of the grid is saved, and the algorithm proceeds to the next empty
+ *    spot. If no valid number can be placed, the algorithm backtracks to the previous state and tries a different
+ *    number.
+ * 4. The program continues this process until the square is filled or until it is determined that no solution exists.
+ *
+ * The algorithm uses a stack to store the current and previous states of the grid, allowing efficient backtracking.
+ *
+ * @note This program does not use static arrays for storing the grid but uses dynamic memory allocation for flexibility.
+ *
+ *
+ *
+ */
